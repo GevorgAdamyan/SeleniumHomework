@@ -33,13 +33,18 @@ async function submitForm (){
     
 
      userNameField.sendKeys(fullName);
+     await driver.sleep(1000);
      userEmailField.sendKeys(testEmail);
+     await driver.sleep(1000);
      currentAddressField.sendKeys(adress);
+     await driver.sleep(1000);
      permanentAddressField.sendKeys(adress);
+     await driver.sleep(1000);
 
         //Submitting the Form
 
      await driver.findElement(By.id("submit")).click();
+     await driver.sleep(2000);
 
         //Assertions
 
